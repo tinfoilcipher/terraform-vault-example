@@ -1,5 +1,5 @@
 resource "random_password" "azuresecrets" {
-    length = 32
+    length  = 32
     special = true
     count   = "${length(var.secret_keys)}"
 }
